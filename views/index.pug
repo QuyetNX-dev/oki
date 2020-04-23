@@ -1,5 +1,12 @@
 h1 Hello
 
-form(action="/" mrthod="GET")
-  input(type="text" name="q")
+form(action="/" method="POST")
+  input(type="text" name="title")
   button(type="submit") create
+form(action="/search" method="GET")
+  input(type="text" name="q")
+  button Searh
+ul
+  each todo in todos
+    li= todo.stt + ': ' + todo.title
+      a(href="/" + todo.id, style="padding-left: 10px") delete
