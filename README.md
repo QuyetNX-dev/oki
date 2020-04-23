@@ -1,2 +1,0 @@
-# oki
-Created with CodeSandbox
